@@ -20,28 +20,28 @@ node *createNode(int value){
 
 void placeInTree(node *root, int newValue)
 {
-    node currentNode = *root;
+    node *currentNode = root;
 
     for (;;)
     {
-        if (newValue < currentNode.value)
+        if (newValue < currentNode->value)
         {
-            if (currentNode.left == NULL)
+            if (currentNode->left == NULL)
             {
-                currentNode.left = createNode(newValue);
+                currentNode->left = createNode(newValue);
                 return;
             }
 
-            currentNode = *currentNode.left;
+            currentNode = currentNode->left;
         }
         else
         {
-            if (currentNode.right == NULL)
+            if (currentNode->right == NULL)
             {
-                currentNode.right = createNode(newValue);
+                currentNode->right = createNode(newValue);
                 return;
             }
-            currentNode = *currentNode.right;
+            currentNode = currentNode->right;
         }
     }
 }
@@ -55,7 +55,7 @@ node *makeTree(int myArray[])
 
     for (int i = 2; i < arrayLength; i++)
     {
-        /* code */
+        placeInTree(root, myArray[i]);
     }
 
     return root;
