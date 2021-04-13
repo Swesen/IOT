@@ -85,6 +85,8 @@ void loop()
     else
     {
       mode++;
+      PORTC = 0;
+      PORTD = digits[8];
       timers[ReactionTimerStart] = currentMillisecond;
     }
     break;
