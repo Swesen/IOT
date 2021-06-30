@@ -4,20 +4,8 @@
 			"path": "."
 		},
 		{
-			"name": "Exercise Traffic lights",
-			"path": "Week 4\\Exercise Traffic lights"
-		},
-		{
-			"name": "Exercise Knight Rider",
-			"path": "Week 4\\Exercise Knight Rider"
-		},
-		{
-			"name": "Exercise 7 segment count down",
-			"path": "Week 4\\Exercise 7 segment count down"
-		},
-		{
-			"name": "Assignment dice",
-			"path": "Week 5\\Assignment dice"
+			"name": "Assignment Alarm Clock",
+			"path": "Week 6\\Assignment Alarm Clock"
 		}
 	],
 	"settings": {
